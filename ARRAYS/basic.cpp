@@ -2,9 +2,18 @@
 using namespace std;
 int main(){
 
-int arr[5]={1,2,3,4,5};
-cout<< sizeof(arr)/sizeof(int) <<endl;
+int n;
+cout<< "enter length of array: ";
+cin>> n;
 
+int arr[n];
+
+for (int i =0;i<n;i++){
+    cin >> arr[i] ;
+}
+for (int i =0;i<n;i++){
+    cout<<arr[i]<<" " ;
+}
 return 0;
 }
 
