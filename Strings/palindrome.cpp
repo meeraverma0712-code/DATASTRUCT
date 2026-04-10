@@ -9,16 +9,12 @@ bool isPalindrome(char word[], int n){
          cout << "is not palindrome ";
         return false;
         }
-       
-    }
+       }
      cout << "is palindrome ";
-    return true;
-  }
-   
-int main(){
-
+     return true;
+}
+   int main(){
     char word[]= "racecar" ;
     isPalindrome(word, strlen(word));
-   
     return 0;
 }

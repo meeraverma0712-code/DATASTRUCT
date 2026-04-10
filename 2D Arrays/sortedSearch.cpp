@@ -2,9 +2,7 @@
 using namespace std;
 
 int search(int mat[][4], int n,int m ,int key){
-    
-    int sum = 0;
-
+     int sum = 0;
     for (int i=0;i<n;i++){
         for (int j=0;j<m;j++)
 
