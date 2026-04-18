@@ -13,7 +13,7 @@ void reverse(char word[], int n){
 }
 int main(){
 
-    char word[]= "meera" ;
+    char word[]= "heyyou" ;
     reverse(word, strlen(word));
     cout<<word<< endl;
      return 0;
