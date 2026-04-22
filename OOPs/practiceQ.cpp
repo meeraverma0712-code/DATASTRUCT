@@ -21,9 +21,7 @@ public:
 
     }
   };
-   
-
-    int main(){
+   int main(){
     User user1(101);
     user1.username = "MeeH";
     user1.setPassword("abdc");
