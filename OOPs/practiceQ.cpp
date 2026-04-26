@@ -26,7 +26,7 @@ public:
     user1.username = "MeeH";
     user1.setPassword("abdc");
 
-    cout<< "username : "<< user1.username << endl;
+    cout<< " given username : "<< user1.username << endl;
     cout << "password = " << user1.getPassword() << endl;
 
      
