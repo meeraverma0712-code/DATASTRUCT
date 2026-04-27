@@ -28,7 +28,5 @@ public:
 
     cout<< " given username : "<< user1.username << endl;
     cout << "password = " << user1.getPassword() << endl;
-
-     
-     return 0;
+    return 0;
 }
