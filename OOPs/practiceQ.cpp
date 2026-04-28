@@ -17,7 +17,7 @@ public:
    }
 
   void setPassword(string password){
-    this-> password = password;
+    this-> password  = password;
 
     }
   };
@@ -27,6 +27,6 @@ public:
     user1.setPassword("abdc");
 
     cout<< " given username : "<< user1.username << endl;
-    cout << "password = " << user1.getPassword() << endl;
+    cout << "password= " <<user1.getPassword()<< endl;
     return 0;
 }
