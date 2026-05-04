@@ -1,17 +1,18 @@
 #include <iostream>
+#include <vector>
 using namespace std;
-bool isSorted (int arr[] ,int n, int i){
-   if (i ==n-1){
-      return true;
+  int firstOccurence (vector<int> arr , int i , int target){
+
+    if(i == arr.size()){
+      return -1;
     }
-    if(arr[i]>arr[i+1]){
-        return false ;
-}
- return isSorted (arr , 5 , i+1);
+    if(arr[i] == target){
+      return i;
+    } 
+    return firstOccurence(arr , i+1 , target);
 }
 int main(){
-  int arr1[5] = {1,2,3,4,5};
-  int arr2[5] = {1,3,2,4,5};
-  cout<< isSorted( arr1,5, 0);
+vector<int> arr = {1,2,3,3,3,4,5};
+cout << " first occurence is in index = " << firstOccurence(arr ,0,4);
   return 0;
 }
