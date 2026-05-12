@@ -39,6 +39,7 @@ mergeSort(arr , mid+1 ,ei );// right
  merge(arr , si , mid , ei);    
 }
 
+// print new array
 void print(int arr[] , int n){
     for (int i=0; i<n ;i++){
         cout << arr[i] <<" ";
