@@ -26,12 +26,10 @@ using namespace std;
     if (si>=ei){
       return ;
     }
-
-    int pivotIdx = partition(arr , si , ei);
+int pivotIdx = partition(arr , si , ei);
     quickSort(arr , si , pivotIdx-1);
     quickSort(arr , pivotIdx+1, ei);
   }
-
 int main(){
  int arr [6]={6,3,7,5,2,4} ;
  int n=6;

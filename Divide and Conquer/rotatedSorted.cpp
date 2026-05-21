@@ -32,5 +32,5 @@ int main(){
  int arr [7]={4,5,6,7,0,1,2};
  int n=7;
 cout <<  "idx :  " <<search(arr , 0 , n-1 , 0) << endl;
-return 0;
+return 0; 
 }
