@@ -8,7 +8,7 @@ int diagonalSum(int mat[][4], int n){
           if( i != n-i-1){
              sum+= mat[i][n-i-1];
           }
-        }
+}
      cout<< "sum="<< sum << endl ;
          return sum;
     }
