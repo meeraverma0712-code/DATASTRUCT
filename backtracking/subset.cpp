@@ -6,7 +6,7 @@ using namespace std;
 void printSubsets(string str, string  subset){
   if (str.size()== 0){
     cout << subset << "\n" ;
-    return;
+    return; 
   }
 char ch = str[0];
 // yes choice
