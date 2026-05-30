@@ -29,7 +29,7 @@ for (int idx=si , x =0; idx<=ei ; idx++ ){
 }
 void mergeSort(int arr[] , int si , int ei){
     if (si >=ei){
-        return ;
+        return;
     }
 
 int mid = si + (ei-si)/2;
@@ -50,6 +50,6 @@ int main(){
 int arr[6] = {6,3,7,5,2,4};
 int n = 6;
 mergeSort(arr, 0 , n-1);
-print(arr , n);
+print(arr ,n);
 return 0;
 }
