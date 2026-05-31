@@ -8,10 +8,8 @@ void printBoard(vector<vector<char>> board) {
         for(int j = 0; j < board.size(); j++) {
             cout << board[i][j] << " ";
         }
-
         cout << endl;
     }
-
     cout << endl;
 }
 
@@ -36,7 +34,6 @@ bool isSafe(vector<vector<char>> board, int row, int col) {
         if(board[i][j] == 'Q') {
             return false;
         }
-
         i--;
         j--;
     }
@@ -50,12 +47,10 @@ bool isSafe(vector<vector<char>> board, int row, int col) {
         if(board[i][j] == 'Q') {
             return false;
         }
-
         i--;
         j++;
     }
-
-    return true;
+     return true;
 }
 
 void nQueens(vector<vector<char>> board , int row){
@@ -84,11 +79,9 @@ void nQueens(vector<vector<char>> board , int row){
         }
     }
 }
-
 int main(){
 
     vector<vector<char>> board;
-
     int n = 2;
 
     for(int i = 0 ; i < n ; i++){
@@ -103,6 +96,5 @@ int main(){
     }
 
     nQueens(board, 0);
-
     return 0;
 }

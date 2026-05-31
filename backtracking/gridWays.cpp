@@ -12,8 +12,6 @@ int gridWays(int r , int c , int n , int m){
      int val2 = gridWays(r+1, c , n , m);
      return val1 + val2;
 }
-
-
 int main(){
   int n = 3;
   int m =3;
