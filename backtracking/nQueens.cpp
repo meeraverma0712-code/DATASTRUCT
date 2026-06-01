@@ -97,5 +97,4 @@ int main(){
     nQueens(board, 0);
 
     return 0 ;
-     
 }

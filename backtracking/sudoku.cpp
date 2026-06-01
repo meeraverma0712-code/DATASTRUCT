@@ -39,8 +39,6 @@ bool isSafe( int sudoku [9][9], int row , int col, int digit ){
   return true;
 }
 
-
-
 bool sudokuSolver(int sudoku [9][9], int row , int col){
     if (row == 9 ){
         printSudoku(sudoku);
