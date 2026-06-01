@@ -38,7 +38,7 @@ bool isSafe(vector<vector<char>> board, int row, int col) {
         j--;
     }
 
-    // check right upper diagonal
+    // check right upper diagonal.
     i = row;
     j = col;
 
@@ -78,7 +78,7 @@ void nQueens(vector<vector<char>> board , int row){
             board[row][j] = '.';
         }
     }
-}
+} // 
 int main(){
 
     vector<vector<char>> board;
@@ -94,7 +94,6 @@ int main(){
 
         board.push_back(newRow);
     }
-
     nQueens(board, 0);
     return 0;
 }
