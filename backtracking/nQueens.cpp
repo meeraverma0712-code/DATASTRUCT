@@ -95,5 +95,7 @@ int main(){
         board.push_back(newRow);
     }
     nQueens(board, 0);
-    return 0;
+
+    return 0 ;
+     
 }
