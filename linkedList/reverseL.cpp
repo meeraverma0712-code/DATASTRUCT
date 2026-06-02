@@ -69,19 +69,62 @@ void printList(){
      newNode->next = temp-> next;
      temp->next= newNode;
     }
+    void pop_front(){
+        Node*temp = head;
+        head = head->next;
+        temp->next = NULL;
+        delete temp;
+    }
+    void pop_back(){
+        Node*temp = head;
+        while (temp-> next-> next != NULL){
+            temp= temp->next;
+        }
+        temp->next = NULL;
+        delete tail;
+        tail = temp;
+    }
+
+    int searchItr(int key){
+        Node* temp = head ;
+        int idx = 0;
+        while(temp!= NULL){
+            if(temp->data == key){
+                return idx;
+            }
+            temp = temp ->next;
+            idx++ ;
+        }
+        return -1;
+    }
+    
+    void reverse(){
+    Node * curr = head;
+    Node* prev = NULL;
+    tail=head;
+    while( curr != NULL){
+        Node * next = curr->next;
+        curr->next = prev;
+
+        prev = curr;
+        curr = next; 
+        }
+        head = prev;
+    }
+
+    
 };
-  
 
 int main(){
    List ll;
+   ll.push_front(5);
+   ll.push_front(4);
    ll.push_front(3);
    ll.push_front(2);
    ll.push_front(1);
    ll.printList();
-   ll.push_back(4);
-   ll.push_back(5);
-   
-   ll.insert(10,2);
+   ll.reverse();
    ll.printList();
+
    return 0;
 }
