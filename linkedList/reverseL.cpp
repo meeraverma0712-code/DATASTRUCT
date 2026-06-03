@@ -17,6 +17,7 @@ public:
 class List{
     Node* head;
     Node* tail;
+ 
 
 public:
     List(){
@@ -111,7 +112,27 @@ void printList(){
         }
         head = prev;
     }
+    int getSize(){
+        int size =0;
+        Node* temp = head;
+        while (temp!= NULL){
+            temp = temp->next;
+            size++;
+        }
+        return size;
+    }
+   
+    void removeNth(int n){
+        int size =getSize ();
+        Node* prev = head;
+        for (int i=1;i<(size-n);i++){
+            prev = prev->next;
+        }
+        Node* toDel = prev->next;
+        cout << "going to delete "<<toDel->data<<endl;
+        prev->next = prev->next->next;
 
+    }
     
 };
 
@@ -124,6 +145,8 @@ int main(){
    ll.push_front(1);
    ll.printList();
    ll.reverse();
+   ll.printList();
+   ll.removeNth(3);
    ll.printList();
 
    return 0;
