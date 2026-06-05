@@ -110,10 +110,10 @@ else{
         fast = fast->next;
     }
     prev->next = NULL;
+}
+    }
 
-}
     
-}
 };
 
 int main() {
