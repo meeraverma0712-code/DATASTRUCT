@@ -27,7 +27,7 @@ public:
 
     if(head == NULL){
         head = tail = newNode;
-    } else{
+    } else{  
         newNode->next = head;
         head->prev= newNode;
         head = newNode;
@@ -42,7 +42,6 @@ void printList(){
     }
     cout << "NULL\n" ;
    }
-
 
 void push_back(int val){
     Node* newNode = new Node(val);
