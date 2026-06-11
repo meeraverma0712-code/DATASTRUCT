@@ -2,12 +2,13 @@
 #include <vector>
 using namespace std;
 int main(){
-        vector<int> vec1(10 , -1);
-        cout << vec1.size() << "\n";
-
-        for (int i = 0 ; i<vec1.size(); i++){
-            cout << vec1[i] <<" ";
+    vector<int> nums = { 4, -10, 2, 8, 1};
+    int max = nums[0];
+    for (int i=1 ; i<nums.size(); i++){
+        if(nums[i]> max){
+            max = nums[i];
         }
-        cout << endl;
+    }
+    cout << " max= " << max;
     return 0;
 }
