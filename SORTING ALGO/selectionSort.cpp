@@ -23,8 +23,7 @@ void selectionSort(int arr[], int n)
             swap(arr[i], arr[minIdx]);
         }
     }
-
-    print(arr, n);
+     print(arr, n);
 }
 int main()
 {
