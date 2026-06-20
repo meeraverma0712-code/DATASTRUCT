@@ -25,8 +25,7 @@ void selectionSort(int arr[], int n)
     }
      print(arr, n);
 }
-int main()
-{
+int main(){
     int arr[5] = {5, 4, 1, 3, 2};
     int n = 5;
     selectionSort(arr, n);
