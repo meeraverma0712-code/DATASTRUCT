@@ -54,7 +54,6 @@ bool isSafe(vector<vector<char>> board, int row, int col) {
 }
 
 void nQueens(vector<vector<char>> board , int row){
-
     int n = board.size();
 
     // base case
