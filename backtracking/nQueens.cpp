@@ -14,9 +14,7 @@ void printBoard(vector<vector<char>> board) {
 }
 
 bool isSafe(vector<vector<char>> board, int row, int col) {
-
     int n = board.size();
-
     // check upper column
     for(int i = 0; i < row; i++) {
 
