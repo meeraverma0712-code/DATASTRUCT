@@ -9,8 +9,7 @@ using namespace std;
    }
    return pow;
    }
-
- // with recursion 
+// with recursion 
   int recurPower(int x , int n){
     if(n==0){
       return 1;
