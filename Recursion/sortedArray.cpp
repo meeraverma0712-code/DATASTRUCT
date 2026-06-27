@@ -5,11 +5,10 @@ bool isSorted (int arr[] ,int n, int i){
       return true;
     }
     if(arr[i]>arr[i+1]){
-        return false ;
+    return false ;
 }
  return isSorted (arr , 5 , i+1);
 }
-
 int main(){
   int arr1[5] = {1,2,3,4,5};
   int arr2[5] = {1,3,2,4,5};
